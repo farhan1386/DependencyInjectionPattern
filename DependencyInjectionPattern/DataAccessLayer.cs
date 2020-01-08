@@ -2,7 +2,7 @@
 
 namespace DependencyInjectionPattern
 {
-    class EmployeeDataAccessLayer : IDataAccessLayer
+    class DataAccessLayer : IDataAccessLayer
     {
         public List<Employee> GetEmployees()
         {

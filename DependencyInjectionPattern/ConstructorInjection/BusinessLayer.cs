@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DependencyInjectionPattern
+namespace DependencyInjectionPattern.ConstructorInjection
 {
     class BusinessLayer
     {
@@ -8,7 +8,7 @@ namespace DependencyInjectionPattern
 
         public BusinessLayer(IDataAccessLayer dataAccessLayer)
         {
-           DataAccessLayer = dataAccessLayer;
+            DataAccessLayer = dataAccessLayer;
         }
 
         public List<Employee> GetAllEmployees()

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>DependencyInjectionPattern.MethodInjectionExample</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,12 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BusinessLayer.cs" />
+    <Compile Include="ConstructorInjectionExample.cs" />
+    <Compile Include="ConstructorInjection\BusinessLayer.cs" />
     <Compile Include="Employee.cs" />
-    <Compile Include="EmployeeDataAccessLayer.cs" />
+    <Compile Include="DataAccessLayer.cs" />
     <Compile Include="IDataAccessLayer.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MethodInjectionExample.cs" />
+    <Compile Include="MethodInjection\BusinessLayer.cs" />
+    <Compile Include="PropertyInjectionExample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertyInjection\PropertyBusinessLayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

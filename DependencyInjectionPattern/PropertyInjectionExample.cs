@@ -1,13 +1,17 @@
-﻿using System;
+﻿using DependencyInjectionPattern.PropertyInjection;
+using System;
 using System.Collections.Generic;
 
 namespace DependencyInjectionPattern
 {
-    class Program
+    class PropertyInjectionExample
     {
+        // Property Injection Example
+
         static void Main(string[] args)
         {
-            BusinessLayer businesslayer = new BusinessLayer(new EmployeeDataAccessLayer());
+            PropertyBusinessLayer businesslayer = new PropertyBusinessLayer();
+            businesslayer.dataAccessObject = new DataAccessLayer();
             List<Employee> emp = businesslayer.GetAllEmployees();
 
             foreach (var item in emp)
